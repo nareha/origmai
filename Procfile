@@ -1,1 +1,1 @@
-worker: npm run dev
+worker: node ./src/bot.js
