@@ -6,9 +6,8 @@ module.exports = class PongCommand extends BaseCommand {
   }
 
   async run(message) {
-    const cnd = message.shift().toLowerCase();
-    if(cmd == ";ping") {
-      const msg = await message.channel.send('pong!');
+    if(message.content === ';ping') {
+      message.channel.send('pong!');
     }
 
     try{
@@ -16,7 +15,7 @@ module.exports = class PongCommand extends BaseCommand {
       await message.channel.send(msg);
     } catch (err) {
       console.log(err);
-      message.channel.send('I am not able to say that message ):')
+      message.channel.send('I couldn\'t pong back! ):')
     }
   }
 }
