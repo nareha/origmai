@@ -5,17 +5,16 @@ module.exports = class PongCommand extends BaseCommand {
     super('pong', 'fun', []);
   }
 
-  async run(message) {
-    if(message.content === ';ping') {
-      message.channel.send('pong!');
-    }
-
+  async run(client, message) {
+    const sayEmbed = new Discord.MessageEmbed()
+      .setTitle(`pong!`)
+      .setColor("#84daf8")
     try{
       if (message.author.bot) return undefined;
-      await message.channel.send(msg);
+      await message.channel.send(sayEmbed);
     } catch (err) {
       console.log(err);
-      message.channel.send('I couldn\'t pong back! ):')
+      message.channel.send('I am not able to say that message ):')
     }
   }
 }
