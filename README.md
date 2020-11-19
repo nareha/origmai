@@ -1,4 +1,4 @@
-## welcome to project origmai. :metal:
+## welcome to project origmai :metal:
 
 started on november 14, 2020
 
@@ -11,3 +11,4 @@ this bot currently cannot be invited into any servers as it is a very early deve
 commands
 --------
 ``;say <message>`` - repeats the message a cute embedded format
+``;ping`` - pong!
