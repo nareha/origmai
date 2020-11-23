@@ -1,4 +1,5 @@
 const BaseCommand = require('../../utils/structures/BaseCommand');
+const Discord = require('discord.js');
 
 module.exports = class PongCommand extends BaseCommand {
   constructor() {
