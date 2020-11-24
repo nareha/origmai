@@ -7,8 +7,7 @@ module.exports = class PongCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-    const args = message.content.slice(prefix.length).split(/ ;/);
-    const commandName = args.shift().toLowerCase();
+    const commandName = message.content.shift().toLowerCase();
     const sayEmbed;
     if (commandName === 'ping') {
       sayEmbed = new Discord.MessageEmbed()
