@@ -7,13 +7,9 @@ module.exports = class PongCommand extends BaseCommand {
   }
 
   async run(client, message, args) {
-    const commandName = message.content.shift().toLowerCase();
-    const sayEmbed;
-    if (commandName === 'ping') {
-      sayEmbed = new Discord.MessageEmbed()
+    const sayEmbed = new Discord.MessageEmbed()
       .setTitle(`pong!`)
-      .setColor("#84daf8")
-    }
+      .setColor("#84daf8");
     try{
       if (message.author.bot) return undefined;
       await message.channel.send(sayEmbed);
