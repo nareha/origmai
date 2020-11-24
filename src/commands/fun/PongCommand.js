@@ -3,10 +3,10 @@ const Discord = require('discord.js');
 
 module.exports = class PongCommand extends BaseCommand {
   constructor() {
-    super('pong', 'fun', []);
+    super('ping', 'fun', []);
   }
 
-  async run(message) {
+  async run(client, message, args) {
     const args = message.content.slice(prefix.length).split(/ ;/);
     const commandName = args.shift().toLowerCase();
     const sayEmbed;
