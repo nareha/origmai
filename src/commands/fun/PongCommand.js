@@ -6,12 +6,5 @@ module.exports = class PongCommand extends BaseCommand {
   }
 
   async run(client, message) {
-    try{
-      if (message.author.bot) return undefined;
-      await message.channel.send('pong!');
-    } catch (err) {
-      console.log(err);
-      message.channel.send('I missed the ball D:')
-    }
-  }
+    message.channel.send('pong!');
 }
