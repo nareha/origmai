@@ -6,15 +6,12 @@ module.exports = class PongCommand extends BaseCommand {
   }
 
   async run(client, message) {
-    const sayEmbed = new Discord.MessageEmbed()
-      .setTitle(`pong!`)
-      .setColor("#84daf8")
     try{
       if (message.author.bot) return undefined;
-      await message.channel.send(sayEmbed);
+      await message.channel.send('pong!');
     } catch (err) {
       console.log(err);
-      message.channel.send('I am not able to say that message ):')
+      message.channel.send('I missed the ball D:')
     }
   }
 }
