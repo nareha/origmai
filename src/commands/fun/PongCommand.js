@@ -7,4 +7,5 @@ module.exports = class PongCommand extends BaseCommand {
 
   async run(client, message) {
     message.channel.send('pong!');
+  }
 }
