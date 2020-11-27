@@ -1,7 +1,7 @@
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const Discord = require('discord.js');
 
-module.exports = class SayCommand extends BaseCommand {
+module.exports = class ListQuoteCommand extends BaseCommand {
   constructor() {
     super('qlist', 'quotes', []);
   }

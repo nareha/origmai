@@ -1,7 +1,7 @@
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const Discord = require('discord.js');
 
-module.exports = class SayCommand extends BaseCommand {
+module.exports = class DeleteQuoteCommand extends BaseCommand {
   constructor() {
     super('qdel', 'quotes', []);
   }
